@@ -28,6 +28,8 @@ def deletemidelement(arr,k):
     if k==1:
         a.pop(0)
         return
+    elif k<1:
+        return
     ele=arr.pop(0)
     print(ele)
     deletemidelement(arr,k-1)
