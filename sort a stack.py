@@ -1,6 +1,6 @@
 """" SORT A STACK """
 def insertstack(arr,ele):
-    if len(arr)==0 or arr[-1]>=ele:
+    if len(arr)==0 or arr[-1]<=ele:
         arr.append(ele)
         return
         val=arr.pop()
@@ -14,5 +14,5 @@ def sortstack(arr):
     insertstack(arr,ele)
 a=list(map(int,input().split()))
 sortstack(a)
-for i in a:
-    print(i,end=" ")
+a.reverse()
+print(a)
